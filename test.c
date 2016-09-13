@@ -8,5 +8,7 @@ int main()
 	printf("the input is %zu characters long\n", ft_strlen(string));
 	char haha = 100;
 	ft_putchar(haha);
+	printf("\n");
+	printf("%c\n", ft_toupper(haha));
 	return 0;
 };
