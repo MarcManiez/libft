@@ -1,5 +1,5 @@
-main: main.c libft.a libft.h
-	gcc -o main libft.a main.c
+test: test.c libft.a libft.h
+	gcc -o test libft.a test.c
 
 libft.a: ft_strlen.o ft_putchar.o
 	ar -rc libft.a ft_strlen.o ft_putchar.o
@@ -11,4 +11,4 @@ ft_putchar.o: ft_putchar.c
 	gcc -c ft_putchar.c
 
 clean:
-	rm main ft_strlen.o ft_putchar.o libft.a
+	rm test ft_strlen.o ft_putchar.o libft.a
