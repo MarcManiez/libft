@@ -5,3 +5,4 @@
 size_t ft_strlen(char *);
 void ft_putchar (char);
 char ft_toupper(char);
+char ft_tolower(char);
