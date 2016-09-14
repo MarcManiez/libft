@@ -112,6 +112,19 @@ int main()
 		printf("noppers!\n");
 	}
 
+	// test for ft_isprint
+
+	if (ft_isprint(c))
+	{
+		printf("%c\n", c);
+		printf("this is a printable character\n");
+	}
+	else
+	{
+		printf("%c\n", c);		
+		printf("noppers!\n");
+	}
+	
 
 	return 0;
 };
