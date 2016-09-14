@@ -12,6 +12,7 @@ int main()
 	printf("\n");	
 	ft_putstr(string);
 	printf("\n");
+	ft_putendl(string);
 	printf("test for ft_toupper: %c\n", ft_toupper(haha));
 	printf("test for ft_tolower: %c\n", ft_tolower(hahaha));
 	return 0;

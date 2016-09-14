@@ -7,3 +7,4 @@ void ft_putchar (char);
 char ft_toupper(char);
 char ft_tolower(char);
 void ft_putstr (char const *);
+void ft_putendl (char const *s);
