@@ -1,9 +1,9 @@
 #include "libft.h"
 
-int ft_isupper(int c)
+int ft_isdigit(int c)
 {
-	int i = 65;
-	while (i <= 90)
+	int i = 48;
+	while (i <= 57)
 	{
 		if (i == c)
 		{

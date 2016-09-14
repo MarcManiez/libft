@@ -1,9 +1,9 @@
 #include "libft.h"
 
-int ft_isupper(int c)
+int ft_islower(int c)
 {
-	int i = 65;
-	while (i <= 90)
+	int i = 97;
+	while (i <= 122)
 	{
 		if (i == c)
 		{
@@ -16,4 +16,3 @@ int ft_isupper(int c)
 	}
 	return 0;
 }
-

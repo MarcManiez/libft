@@ -33,9 +33,9 @@ int main()
 
 	printf("test for ft_tolower: %c\n", ft_tolower(hahaha));
 
-	// test of ft_isupper
+	// test for ft_isupper
 	
-	int c = 89;
+	int c = 99;
 	if (ft_isupper(c))
 	{
 		printf("%c\n", c);
@@ -46,6 +46,72 @@ int main()
 		printf("%c\n", c);		
 		printf("noppers!\n");
 	}
-       	
+ 
+	// test for ft_islower
+	
+	if (ft_islower(c))
+	{
+		printf("%c\n", c);
+		printf("lower case yo\n");
+	}
+	else
+	{
+		printf("%c\n", c);		
+		printf("noppers!\n");
+	}
+	
+	// test for ft_isalpha
+
+	if (ft_isalpha(c))
+	{
+		printf("%c\n", c);
+		printf("this is a letter\n");
+	}
+	else
+	{
+		printf("%c\n", c);		
+		printf("noppers!\n");
+	}
+
+	// test for ft_isdigit
+
+	if (ft_isdigit(c))
+	{
+		printf("%c\n", c);
+		printf("this is a number\n");
+	}
+	else
+	{
+		printf("%c\n", c);		
+		printf("noppers!\n");
+	}
+	
+	// test for ft_isalnum
+
+	if (ft_isalnum(c))
+	{
+		printf("%c\n", c);
+		printf("this is a number or a digit\n");
+	}
+	else
+	{
+		printf("%c\n", c);		
+		printf("noppers!\n");
+	}
+	
+	// test for ft_isascii
+
+	if (ft_isascii(c))
+	{
+		printf("%c\n", c);
+		printf("this is an ascii character\n");
+	}
+	else
+	{
+		printf("%c\n", c);		
+		printf("noppers!\n");
+	}
+
+
 	return 0;
 };
