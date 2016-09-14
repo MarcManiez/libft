@@ -9,6 +9,8 @@ int main()
 	char haha = 100;
 	char hahaha = 70;	
 	ft_putchar(haha);
+	printf("\n");	
+	ft_putstr(string);
 	printf("\n");
 	printf("test for ft_toupper: %c\n", ft_toupper(haha));
 	printf("test for ft_tolower: %c\n", ft_tolower(hahaha));
