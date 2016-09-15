@@ -2,17 +2,5 @@
 
 int ft_islower(int c)
 {
-	int i = 97;
-	while (i <= 122)
-	{
-		if (i == c)
-		{
-			return 1;
-		}
-		else
-		{
-			i++;
-		}
-	}
-	return 0;
+	return (c >= 97 && c <= 122) ? 1 : 0;
 }

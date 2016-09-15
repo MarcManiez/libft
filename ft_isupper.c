@@ -2,18 +2,6 @@
 
 int ft_isupper(int c)
 {
-	int i = 65;
-	while (i <= 90)
-	{
-		if (i == c)
-		{
-			return 1;
-		}
-		else
-		{
-			i++;
-		}
-	}
-	return 0;
+	return (c >= 65 && c <= 90) ? 1 : 0;
 }
 

@@ -2,18 +2,6 @@
 
 int ft_isprint(int c)
 {
-	int i = 32;
-	while (i <= 126)
-	{
-		if (i == c)
-		{
-			return 1;
-		}
-		else
-		{
-			i++;
-		}
-	}
-	return 0;
+	return (c >= 32 && c<= 126) ? 1 : 0;
 }
 
