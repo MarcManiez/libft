@@ -17,7 +17,7 @@ int main()
 
 	// test for ft_putstr
 
-	printf("\n");	
+	printf("\n");
 	ft_putstr(string);
 
 	// test for ft_putsendl

@@ -2,9 +2,6 @@
 
 void ft_putendl (char const *s)
 {
-	while (*s)
-	{
-		ft_putchar(*s++);
-	}
-	printf("\n");
+	ft_putstr(s);
+	ft_putchar('\n');
 };
