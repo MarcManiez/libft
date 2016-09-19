@@ -130,5 +130,11 @@ int main()
 	ft_strchr(stringchr, chara);
 	printf("%s\n", ft_strchr(stringchr, chara) ? : "NULL");
 
+	// test for ft_strrchr
+	
+	ft_strrchr(stringchr, chara);
+	printf("%s\n", ft_strrchr(stringchr, chara) ? : "NULL");
+	return 0;
+
 	return 0;
 };
