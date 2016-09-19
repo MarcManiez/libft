@@ -2,9 +2,9 @@
 #Definitions#
 # ==========#
 
-filenameso := ft_strlen.o ft_putchar.o ft_toupper.o ft_tolower.o ft_putstr.o ft_putendl.o ft_isupper.o ft_islower.o ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o ft_isprint.o
-# filenamesc := $(filenameso:%.o=%.c) included in case file names are needed with a .c extension at a later date
-CC = gcc
+filenamesc := ft_strlen.c ft_putchar.c ft_toupper.c ft_tolower.c ft_putstr.c ft_putendl.c ft_isupper.c ft_islower.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strchr.c
+filenameso := $(filenamesc:%.c=%.o) 
+CC = gcc -Wall -Wextra -Werror
 
 define dotocreator =
 $(firstword $^): $(firstword $^).c
@@ -31,5 +31,5 @@ dotos: $(filenameso)
 clean:
 	rm libft.a test $(filenameso)
 
-re:
-	rm libft.a test $(filenameso) && make
+re: 
+	make clean && make

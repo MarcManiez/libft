@@ -4,10 +4,8 @@ int main()
 {
 	// test for ft_strlen
 	
-	char *string;
-	printf("Enter a word:\n");
-	scanf("%[^\n]s", string);
-	printf("the input is %zu characters long\n", ft_strlen(string));
+	char *string = "lolilol";
+	printf("A string is %zu characters long\n", ft_strlen(string));
 	char haha = 100;
 	char hahaha = 70;
 
@@ -125,6 +123,12 @@ int main()
 		printf("noppers!\n");
 	}
 	
+	// test for ft_strchr
+	
+	char *stringchr = "hello";
+	int chara = 'x';
+	ft_strchr(stringchr, chara);
+	printf("%s\n", ft_strchr(stringchr, chara) ? : "NULL");
 
 	return 0;
 };
