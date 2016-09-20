@@ -134,7 +134,13 @@ int main()
 	
 	ft_strrchr(stringchr, chara);
 	printf("%s\n", ft_strrchr(stringchr, chara) ? : "NULL");
-	return 0;
+
+	// test for ft_strstr
+	
+	const char *big = "I like big aaan butts, and I cannot lie.";
+	const char *little = "and";
+	printf("%s\n", ft_strstr(big, little));
+	printf("%s\n", strstr(big, little));	
 
 	return 0;
 };
