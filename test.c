@@ -140,7 +140,18 @@ int main()
 	const char *big = "I like big aaan butts, and I cannot lie.";
 	const char *little = "and";
 	printf("%s\n", ft_strstr(big, little));
-	printf("%s\n", strstr(big, little));	
+
+	// test for ft_strnstr
+
+	size_t len = 30;
+	printf("%s\n", ft_strnstr(big, little, len));
+
+	// test for ft_strcmp
+	
+	const char *s1 = "";
+	const char *s2 = "";
+	printf("%d\n", ft_strcmp(s1,s2));
+	printf("%d\n", strcmp(s1,s2));
 
 	return 0;
 };
