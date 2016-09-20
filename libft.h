@@ -20,3 +20,4 @@ char * ft_strrchr(const char *, int);
 char * ft_strstr(const char *, const char *);
 char * ft_strnstr(const char *, const char *, size_t);
 int ft_strcmp(const char *, const char *);
+int ft_strncmp(const char *, const char *, size_t);

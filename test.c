@@ -148,10 +148,16 @@ int main()
 
 	// test for ft_strcmp
 	
-	const char *s1 = "";
-	const char *s2 = "";
+	const char *s1 = "lol";
+	const char *s2 = "lo";
 	printf("%d\n", ft_strcmp(s1,s2));
-	printf("%d\n", strcmp(s1,s2));
+
+	// test for ft_strncmp
+	
+	size_t num = 4;
+	printf("%d\n", ft_strncmp(s1,s2, num));
+	printf("%d\n", strncmp(s1,s2, num));
+
 
 	return 0;
 };
