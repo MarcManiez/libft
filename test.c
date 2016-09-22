@@ -158,6 +158,10 @@ int main()
 	printf("%d\n", ft_strncmp(s1,s2, num));
 	printf("%d\n", strncmp(s1,s2, num));
 
+	// test for ft_atoi
+	
+	const char *stringatoi = "1234alpha";
+	printf("%d\n", ft_atoi(stringatoi));
 
 	return 0;
 };
