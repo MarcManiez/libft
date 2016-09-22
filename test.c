@@ -160,7 +160,7 @@ int main()
 
 	// test for ft_atoi
 	
-	const char *stringatoi = "1234alpha";
+	const char *stringatoi = "-1234alpha";
 	printf("%d\n", ft_atoi(stringatoi));
 
 	return 0;
