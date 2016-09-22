@@ -2,7 +2,7 @@
 #include <string.h>
 #include <unistd.h>
 
-size_t ft_strlen(char *);
+size_t ft_strlen(const char *);
 void ft_putchar (char);
 char ft_toupper(char);
 char ft_tolower(char);
@@ -15,3 +15,10 @@ int ft_isdigit(int);
 int ft_isalnum(int);
 int ft_isascii(int);
 int ft_isprint(int);
+char * ft_strchr(const char *, int);
+char * ft_strrchr(const char *, int);
+char * ft_strstr(const char *, const char *);
+char * ft_strnstr(const char *, const char *, size_t);
+int ft_strcmp(const char *, const char *);
+int ft_strncmp(const char *, const char *, size_t);
+int ft_atoi(const char *);

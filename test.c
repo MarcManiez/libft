@@ -4,10 +4,8 @@ int main()
 {
 	// test for ft_strlen
 	
-	char *string;
-	printf("Enter a word:\n");
-	scanf("%[^\n]s", string);
-	printf("the input is %zu characters long\n", ft_strlen(string));
+	char *string = "lolilol";
+	printf("A string is %zu characters long\n", ft_strlen(string));
 	char haha = 100;
 	char hahaha = 70;
 
@@ -125,6 +123,45 @@ int main()
 		printf("noppers!\n");
 	}
 	
+	// test for ft_strchr
+	
+	char *stringchr = "hello";
+	int chara = 'x';
+	ft_strchr(stringchr, chara);
+	printf("%s\n", ft_strchr(stringchr, chara) ? : "NULL");
+
+	// test for ft_strrchr
+	
+	ft_strrchr(stringchr, chara);
+	printf("%s\n", ft_strrchr(stringchr, chara) ? : "NULL");
+
+	// test for ft_strstr
+	
+	const char *big = "I like big aaan butts, and I cannot lie.";
+	const char *little = "and";
+	printf("%s\n", ft_strstr(big, little));
+
+	// test for ft_strnstr
+
+	size_t len = 30;
+	printf("%s\n", ft_strnstr(big, little, len));
+
+	// test for ft_strcmp
+	
+	const char *s1 = "lol";
+	const char *s2 = "lo";
+	printf("%d\n", ft_strcmp(s1,s2));
+
+	// test for ft_strncmp
+	
+	size_t num = 4;
+	printf("%d\n", ft_strncmp(s1,s2, num));
+	printf("%d\n", strncmp(s1,s2, num));
+
+	// test for ft_atoi
+	
+	const char *stringatoi = "1234alpha";
+	printf("%d\n", ft_atoi(stringatoi));
 
 	return 0;
 };
