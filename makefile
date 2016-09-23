@@ -23,23 +23,27 @@ filenamesc := ft_strlen.c \
 			ft_strncmp.c \
 			ft_atoi.c \
 
-filenameso := $(filenamesc:%.c=%.o) 
-CC = gcc -Wall -Wextra -Werror
+filenameso := $(filenamesc:%.c=%.o)
+
+CC = gcc
+CFLAGS = -Wall -Wextra -Werror
+NAME = libft.a
 
 define dotocreator =
 $(firstword $^): $(firstword $^).c
-$(CC) -c $(firstword $^).c
+$(CC) $(CFLAGS) -c $(firstword $^).c
 endef
 
 #===========#
 #Compilation#
 #===========#
 
-test: test.c libft.a libft.h
-	$(CC) -o test libft.a test.c
+test: test.c $(NAME) libft.h
+	$(CC) -o test $(NAME) test.c
 
-libft.a: $(filenameso) 
-	ar -rc libft.a $(filenameso)
+$(NAME): $(filenameso) 
+	ar -rc $(NAME) $(filenameso)
+	ranlib $(NAME)
 
 dotos: $(filenameso)
 	$(dotocreator)
@@ -49,7 +53,10 @@ dotos: $(filenameso)
 #=======#
 
 clean:
-	rm libft.a test $(filenameso)
+	rm -f $(NAME)
+	rm -f $(filenameso)
+	
+fclean: clean	
+	rm -f test
 
-re: 
-	make clean && make
+re: clean test
