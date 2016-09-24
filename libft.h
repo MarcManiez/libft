@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
+#include <stdlib.h>
 
 size_t ft_strlen(const char *);
 void ft_putchar (char);
@@ -22,3 +23,7 @@ char * ft_strnstr(const char *, const char *, size_t);
 int ft_strcmp(const char *, const char *);
 int ft_strncmp(const char *, const char *, size_t);
 int ft_atoi(const char *);
+char * ft_strcpy(char *, const char *);
+void ft_strclr (char *);
+char * ft_strncpy(char *, const char *, size_t);
+

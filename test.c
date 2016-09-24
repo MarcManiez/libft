@@ -3,7 +3,7 @@
 int main()
 {
 	// test for ft_strlen
-	
+
 	char *string = "lolilol";
 	printf("A string is %zu characters long\n", ft_strlen(string));
 	char haha = 100;
@@ -32,7 +32,7 @@ int main()
 	printf("test for ft_tolower: %c\n", ft_tolower(hahaha));
 
 	// test for ft_isupper
-	
+
 	int c = 99;
 	if (ft_isupper(c))
 	{
@@ -44,9 +44,9 @@ int main()
 		printf("%c\n", c);		
 		printf("noppers!\n");
 	}
- 
+
 	// test for ft_islower
-	
+
 	if (ft_islower(c))
 	{
 		printf("%c\n", c);
@@ -57,7 +57,7 @@ int main()
 		printf("%c\n", c);		
 		printf("noppers!\n");
 	}
-	
+
 	// test for ft_isalpha
 
 	if (ft_isalpha(c))
@@ -83,7 +83,7 @@ int main()
 		printf("%c\n", c);		
 		printf("noppers!\n");
 	}
-	
+
 	// test for ft_isalnum
 
 	if (ft_isalnum(c))
@@ -96,7 +96,7 @@ int main()
 		printf("%c\n", c);		
 		printf("noppers!\n");
 	}
-	
+
 	// test for ft_isascii
 
 	if (ft_isascii(c))
@@ -122,21 +122,21 @@ int main()
 		printf("%c\n", c);		
 		printf("noppers!\n");
 	}
-	
+
 	// test for ft_strchr
-	
+
 	char *stringchr = "hello";
 	int chara = 'x';
 	ft_strchr(stringchr, chara);
 	printf("%s\n", ft_strchr(stringchr, chara) ? : "NULL");
 
 	// test for ft_strrchr
-	
+
 	ft_strrchr(stringchr, chara);
 	printf("%s\n", ft_strrchr(stringchr, chara) ? : "NULL");
 
 	// test for ft_strstr
-	
+
 	const char *big = "I like big aaan butts, and I cannot lie.";
 	const char *little = "and";
 	printf("%s\n", ft_strstr(big, little));
@@ -147,21 +147,42 @@ int main()
 	printf("%s\n", ft_strnstr(big, little, len));
 
 	// test for ft_strcmp
-	
+
 	const char *s1 = "lol";
 	const char *s2 = "lo";
 	printf("%d\n", ft_strcmp(s1,s2));
 
 	// test for ft_strncmp
-	
+
 	size_t num = 4;
 	printf("%d\n", ft_strncmp(s1,s2, num));
-	printf("%d\n", strncmp(s1,s2, num));
 
 	// test for ft_atoi
-	
+
 	const char *stringatoi = "-1234alpha";
 	printf("%d\n", ft_atoi(stringatoi));
+
+	// test for ft_strcpy
+
+	char dst[] = "testeroni";
+	const char src[] = "haha";
+	printf("%s\n", ft_strcpy(dst, src));
+
+	// test for ft_strclr
+
+	char laule[] = "1234qwer";
+	ft_strclr(laule);
+	printf("printing laule: %s.\n", laule);
+
+	// test for ft_strncpy
+
+	char dststrncpy[] = "haha";
+	const char srcstrncpy[] = "";
+	size_t strncpyint = 5;
+	printf("%s\n", ft_strncpy(dststrncpy, srcstrncpy, strncpyint));
+	printf("%s\n", strncpy(dststrncpy, srcstrncpy, strncpyint));
+
+	// test for ...
 
 	return 0;
 };
