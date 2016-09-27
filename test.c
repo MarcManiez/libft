@@ -164,8 +164,11 @@ int main()
 
 	// test for ft_strcpy
 
-	char dst[] = "testeroni";
-	const char src[] = "haha";
+	char dst[] = "hahahahahahaha";
+	const char src[] = "testeroni";
+	char dst1[] = "hahahahahahaha";
+	const char src1[] = "testeroni";
+	printf("%s\n", strcpy(dst1, src1));
 	printf("%s\n", ft_strcpy(dst, src));
 
 	// test for ft_strclr
@@ -177,12 +180,36 @@ int main()
 	// test for ft_strncpy
 
 	char dststrncpy[] = "haha";
-	const char srcstrncpy[] = "";
+	const char srcstrncpy[] = "testeroni";
 	size_t strncpyint = 5;
+	char dststrncpy1[] = "haha";
+	const char srcstrncpy1[] = "testeroni";
 	printf("%s\n", ft_strncpy(dststrncpy, srcstrncpy, strncpyint));
-	printf("%s\n", strncpy(dststrncpy, srcstrncpy, strncpyint));
+	printf("%s\n", strncpy(dststrncpy1, srcstrncpy1, strncpyint));
 
-	// test for ...
+	// test for ft_strcat
+
+	char destcat[100]= "";
+	const char *restrict sourcecat = "eroneous";
+	char destcat1[100]= "";
+	const char *restrict sourcecat1 = "eroneous";
+	printf("%s\n", strcat(destcat, sourcecat));
+	printf("%s\n", ft_strcat(destcat1, sourcecat1));
+
+	// test for ft_strncat
+
+	char destcatn[100]= "test";
+	const char *restrict sourcecatn = "eroneous";
+	char destcatn1[100]= "test";
+	const char *restrict sourcecatn1 = "eroneous";
+	printf("%s\n", strncat(destcatn, sourcecatn, 4));
+	printf("%s\n", ft_strncat(destcatn1, sourcecatn1, 4));
+
+	// test for ft_memset
+
+	char b[30] = "This will be a fantastic test!";
+	ft_memset(b + 16, 64, 5);
+	printf("%s\n", b);
 
 	return 0;
 };

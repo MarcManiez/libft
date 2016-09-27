@@ -26,4 +26,6 @@ int ft_atoi(const char *);
 char * ft_strcpy(char *, const char *);
 void ft_strclr (char *);
 char * ft_strncpy(char *, const char *, size_t);
-
+char * ft_strcat(char *restrict, const char *restrict);
+char * ft_strncat(char *restrict, const char *restrict, size_t);
+void *ft_memset (void *, int, size_t);

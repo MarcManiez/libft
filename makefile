@@ -25,6 +25,9 @@ filenamesc := ft_strlen.c \
 			ft_strclr.c \
 			ft_strcpy.c \
 			ft_strncpy.c \
+			ft_strcat.c \
+			ft_strncat.c \
+			ft_memset \
 
 filenameso := $(filenamesc:%.c=%.o)
 
