@@ -2,6 +2,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <errno.h>
 
 size_t ft_strlen(const char *);
 void ft_putchar (char);
@@ -29,3 +30,11 @@ char * ft_strncpy(char *, const char *, size_t);
 char * ft_strcat(char *restrict, const char *restrict);
 char * ft_strncat(char *restrict, const char *restrict, size_t);
 void *ft_memset (void *, int, size_t);
+void *ft_memcpy (void *restrict, const void *restrict, size_t);
+void *ft_memccpy (void *restrict, const void *restrict, int, size_t);
+void *ft_memmove (void *, const void *, size_t);
+void *ft_bzero (void *, size_t);
+void *ft_memchr(const void *, int, size_t);
+int ft_memcmp(const void *, const void *, size_t);
+char *ft_strdup(const char *);
+size_t ft_strlcat(char *restrict, const char *restrict, size_t);

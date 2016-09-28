@@ -211,5 +211,74 @@ int main()
 	ft_memset(b + 16, 64, 5);
 	printf("%s\n", b);
 
+	// test for ft_memcpy
+
+	char dstmemcpy[30] = "This will be a fantastic test!";
+	char srcmemcpy[] = "faabulous wowowowow";
+	ft_memcpy(dstmemcpy+1, dstmemcpy, 9);
+	printf("%s\n", dstmemcpy);
+	char dstmemcpynorm[30] = "This will be a fantastic test!";
+	char srcmemcpynorm[] = "faabulous wowowowow";
+	memcpy(dstmemcpynorm+1, dstmemcpynorm, 9);
+	printf("%s\n", dstmemcpynorm);
+
+	// test for ft_memccpy
+
+	char dstmemccpy[30] = "This will be a fantastic test!";
+	char srcmemccpy[] = "faabulous wowowowow";
+	ft_memccpy(dstmemccpy + 15, srcmemccpy, 98, 9);
+	printf("%s\n", dstmemccpy);
+	char dstmemccpynorm[30] = "This will be a fantastic test!";
+	char srcmemccpynorm[] = "faabulous wowowowow";
+	memccpy(dstmemccpynorm + 15, srcmemccpynorm, 98, 9);
+	printf("%s\n", dstmemccpynorm);
+
+	// test for ft_memmove
+
+	char dstmemmove[30] = "This will be a fantastic test!";
+	//char srcmemmove[] = "faabulous wowowowow";
+	ft_memmove(dstmemmove+1, dstmemmove, 9);
+	printf("%s\n", dstmemmove);
+	char dstmemmovenorm[30] = "This will be a fantastic test!";
+	//char srcmemmovenorm[] = "faabulous wowowowow";
+	memmove(dstmemmovenorm+1, dstmemmovenorm, 9);
+	printf("%s\n", dstmemmovenorm);
+
+	// test for ft_memmove
+
+	char bzero[30] = "This will be a fantastic test!";
+	ft_bzero(bzero+16, 5);
+	printf("%s\n", bzero);
+
+	// test for ft_memchr
+
+	const void *stringmemchr = "testeroni";
+	int cmemchr = 110;
+	size_t nmemchr = 8;
+	printf("%s\n", ft_memchr(stringmemchr, cmemchr, nmemchr));
+
+	// test for ft_memcmp
+
+	const char *s1memcmp = "testing";
+	const char *s2memcmp = "tesaing";
+	printf("result for ft_memcmp:\t%d\n", ft_memcmp(s1memcmp, s2memcmp, 9));
+	printf("result for memcmp:\t%d\n", memcmp(s1memcmp, s2memcmp, 9));
+
+	// test for ft_strdup
+
+	const char *sstrdup = "testeroni";
+	printf("result of ft_strdup:\t%s\n", ft_strdup(sstrdup));
+	printf("result of strdup:\t%s\n", strdup(sstrdup));
+
+	// test for ft_strlcat
+
+	char destlcat[100]= "test";
+	const char *restrict sourcelcat = "eroneously";
+	char destlcat1[100]= "test";
+	const char *restrict sourcelcat1 = "eroneously";
+	printf("strlcat dst:\t%s\n", destlcat);
+	printf("result of strlcat:\t%lu\n", strlcat(destlcat, sourcelcat, 6));
+	printf("result of ft_strlcat:\t%lu\n", ft_strlcat(destlcat1, sourcelcat1, 6));
+
 	return 0;
 };
