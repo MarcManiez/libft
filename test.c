@@ -148,8 +148,8 @@ int main()
 
 	// test for ft_strcmp
 
-	const char *s1 = "lol";
-	const char *s2 = "lo";
+	const char *s1 = "lolesq";
+	const char *s2 = "lol";
 	printf("%d\n", ft_strcmp(s1,s2));
 
 	// test for ft_strncmp
@@ -279,6 +279,10 @@ int main()
 	printf("strlcat dst:\t%s\n", destlcat);
 	printf("result of strlcat:\t%lu\n", strlcat(destlcat, sourcelcat, 6));
 	printf("result of ft_strlcat:\t%lu\n", ft_strlcat(destlcat1, sourcelcat1, 6));
+
+	// test for ft_memalloc
+
+	printf("Test for ft_memalloc %lu\n", (unsigned long)ft_memalloc(10));
 
 	return 0;
 };

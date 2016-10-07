@@ -2,7 +2,7 @@
 
 char * ft_strchr(const char *s, int c)
 { 	
-	while (*(s - 1))
+	while (*s)
 	{
 		if (*s == c)
 		{
