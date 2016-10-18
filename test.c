@@ -284,5 +284,9 @@ int main()
 
 	printf("Test for ft_memalloc %lu\n", (unsigned long)ft_memalloc(10));
 
+	// test for factorial
+
+	printf("test for ft_factorial: %i \n", factorial(4));
+
 	return 0;
 };

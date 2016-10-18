@@ -39,4 +39,5 @@ int ft_memcmp(const void *, const void *, size_t);
 char *ft_strdup(const char *);
 size_t ft_strlcat(char *restrict, const char *restrict, size_t);
 void *ft_memalloc (size_t);
+int factorial(const int);
 
