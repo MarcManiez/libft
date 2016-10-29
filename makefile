@@ -38,6 +38,8 @@ filenamesc := ft_strlen.c \
 			ft_strlcat.c \
 			ft_memalloc.c \
 			ft_factorial.c \
+			ft_memdel.c \
+			ft_recstrlen.c \
 			
 
 filenameso := $(filenamesc:%.c=%.o)

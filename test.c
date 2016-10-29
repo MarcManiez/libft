@@ -6,6 +6,7 @@ int main()
 
 	char *string = "lolilol";
 	printf("A string is %zu characters long\n", ft_strlen(string));
+	printf("Now with the recursive version: %zu", ft_recstrlen(string));
 	char haha = 100;
 	char hahaha = 70;
 
@@ -282,11 +283,16 @@ int main()
 
 	// test for ft_memalloc
 
-	printf("Test for ft_memalloc %lu\n", (unsigned long)ft_memalloc(10));
+	void *ft_memalloctest = ft_memalloc(10);
+	printf("Test for ft_memalloc %s\n", ft_memalloctest);
+
+	// test for ft_memdel
+
+	ft_memdel(ft_memalloctest);
 
 	// test for factorial
 
-	printf("test for ft_factorial: %i \n", factorial(4));
+	printf("test for ft_factorial: %i \n", ft_factorial(4));
 
 	return 0;
 };
